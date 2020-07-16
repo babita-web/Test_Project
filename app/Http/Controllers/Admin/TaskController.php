@@ -30,4 +30,10 @@ class TaskController extends Controller
         $task->save();
         return redirect('/tasks')->with('status', 'Task is added');
     }
+
+    public function edit(Request $request, $id)
+    {
+        $tasks = Task::findorfail($id);
+        return view('admin.edit_task')->with('tasks',$tasks);
+    }
 }

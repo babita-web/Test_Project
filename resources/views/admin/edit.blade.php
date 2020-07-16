@@ -66,6 +66,25 @@
 
                                         </div>
 
+                                        <div class="form-group row">
+                                            <label for="group" >{{ __('Group') }}</label>
+
+                                            <select name="group" class="form-control">
+                                                <option value="{{$users->group}}">{{$users->group}}</option>
+                                                <option value="group1">Group 1</option>
+                                                <option value="group2">Group 2</option>
+                                                <option value="group3">Group 3</option>
+                                                <option value="group4">Group 4</option>
+                                            </select>
+                                            @error('group')
+                                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                            @enderror
+
+                                        </div>
+
+
                                         <button type="submit" class="btn btn-success">Update</button>
                                         <a href="/users" class="btn btn-danger">Cancel</a>
                                     </form>

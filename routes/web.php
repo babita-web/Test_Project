@@ -34,6 +34,9 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::delete('/delete/{id}', 'Admin\DashboardController@delete');
     Route::delete('/deletetask/{id}', 'Admin\TaskController@deletetask');
     Route::post('/add_task', 'Admin\TaskController@addtask');
+
+
+    Route::get('/edit-task/{id}', 'Admin\TaskController@edit');
 });
 
 

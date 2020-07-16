@@ -52,12 +52,7 @@
         </div>
         <div class="sidebar-wrapper" id="sidebar-wrapper">
             <ul class="nav">
-                <li class="{{ 'dashboard' == request()->path() ? 'active': '' }}">
-                    <a href="/dashboard">
-                        <i class="now-ui-icons design_app"></i>
-                        <p>Dashboard</p>
-                    </a>
-                </li>
+
                 <li class="{{ 'tasks' == request()->path() ? 'active': '' }}">
                     <a href="/tasks">
                         <i class="now-ui-icons education_atom"></i>

@@ -64,9 +64,7 @@
                             </th>
                             <th>Title</th>
                             <th>Deadline</th>
-                            <th>Actor_ID</th>
-                            <th>Group_ID</th>
-                            <th>Adopted_BY_Acotr_ID</th>
+
                             <th>Status</th>
                             </thead>
                             <tbody>
@@ -77,9 +75,7 @@
                                     <td>{{$task->id}}</td>
                                     <td>{{ $task->name}}</td>
                                     <td>{{ $task->deadline }}</td>
-                                    <td>{{ $task->actor_id }}</td>
-                                    <td>{{ $task->group_id }}</td>
-                                    <td>{{ $task->adopted_by_id }}</td>
+
                                     <td>{{ $task->status }}</td>
 
 

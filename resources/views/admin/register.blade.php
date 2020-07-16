@@ -36,6 +36,7 @@
                             <th>
                                 Role
                             </th>
+                            <th>Group</th>
                             <th>
                                Edit
                             </th>
@@ -51,6 +52,7 @@
                                     <td>{{ $user->lastname }}</td>
                                     <td>{{ $user->email }}</td>
                                     <td>{{ $user->usertype }}</td>
+                                    <td>{{ $user->group }}</td>
 
 
                                 <td>

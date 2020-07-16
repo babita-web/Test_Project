@@ -25,16 +25,17 @@ class DashboardController extends Controller
         $users->firstname = $request->input('firstname');
         $users->lastname = $request->input('lastname');
         $users->usertype = $request->input('usertype');
+        $users->group = $request->input('group');
         $users->update();
 
-        return redirect ('/role')->with('status','your data is edited');
+        return redirect ('/users')->with('status','your data is edited');
     }
 
     public function delete($id)
     {
         $users = User::findorfail($id);
         $users->delete();
-        return redirect ('/role')->with('status','your data is deleted');
+        return redirect ('/users')->with('status','your data is deleted');
 
     }
 
