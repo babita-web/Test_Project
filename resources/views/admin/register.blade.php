@@ -2,7 +2,7 @@
 
 @section('title')
 
-    Roles| Babita's Test Assignment
+    Users | Babita's Test Assignment
 @endsection
 @section('content')
 
@@ -10,12 +10,20 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title"> Roles Table</h4>
-                </div>
+                    <h4 class="card-title"> Users Table with Roles</h4>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                        @endif
+                </div></div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table">
                             <thead class=" text-primary">
+                            <th>ID</th>
                             <th>
                                 First Name
                             </th>
@@ -35,21 +43,29 @@
                             </thead>
                             <tbody>
 
-                            @foreach($users as $actor)
+                            @foreach($users as $user)
 
                                 <tr>
-                                    <td>{{ $actor->firstname }}</td>
-                                    <td>{{ $actor->lastname }}</td>
-                                    <td>{{ $actor->email }}</td>
-                                    <td>{{ $actor->usertype }}</td>
+                                    <td>{{$user->id}}</td>
+                                    <td>{{ $user->firstname }}</td>
+                                    <td>{{ $user->lastname }}</td>
+                                    <td>{{ $user->email }}</td>
+                                    <td>{{ $user->usertype }}</td>
 
 
                                 <td>
-                                    <a href="#" class="btn btn-success" >Edit</a>
+                                    <a href="/edit-role/{{$user->id}}" class="btn btn-success" >Edit</a>
                                 </td>
                                 <td>
-                                    <a href="#" class="btn btn-danger" >Delete</a>
+                                    <form action="/delete/{{$user->id}}" method="post">
+                                        {{ csrf_field() }}
+                                        {{ method_field('delete') }}
+                                        <input type="hidden" name="id" value="{{ $user->id }}">
+                                        <button type="submit" class="btn btn-danger" >Delete</button>
+
+                                    </form>
                                 </td>
+
                             </tr>
                             </tbody>
 
