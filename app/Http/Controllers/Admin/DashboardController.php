@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 use App\User;
+use App\Task;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -36,4 +37,6 @@ class DashboardController extends Controller
         return redirect ('/role')->with('status','your data is deleted');
 
     }
+
+
 }

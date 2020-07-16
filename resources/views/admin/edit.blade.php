@@ -36,12 +36,12 @@
                                         </div>
 
                                         <div class="form-group row">
-                                            <label for="firstname">{{ __('Last Name') }}</label>
+                                            <label for="lastname">{{ __('Last Name') }}</label>
                                             <input id="lastname" type="text" value="{{$users->lastname}}"
                                                    class="form-control @error('lastname') is-invalid @enderror"
                                                    name="lastname">
 
-                                            @error('firstname')
+                                            @error('lastname')
                                             <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -67,7 +67,7 @@
                                         </div>
 
                                         <button type="submit" class="btn btn-success">Update</button>
-                                        <a href="/role" class="btn btn-danger">Cancel</a>
+                                        <a href="/users" class="btn btn-danger">Cancel</a>
                                     </form>
                                 </div>
                             </div>

@@ -18,23 +18,23 @@ Route::get('/', function () {
 
 });
 
-Route::group(['middleware' => ['auth','admin']], function () {
+Route::group(['middleware' => ['auth', 'admin']], function () {
 
     Route::get('/dashboard', function () {
-    return view('admin.dashboard');});
+        return view('admin.dashboard');
+    });
 
-    Route::get('/tasks', function () {
-    return view('admin.tasks');});
 
     Route::get('/users', 'Admin\DashboardController@registered');
+    Route::get('/tasks', 'Admin\TaskController@assigned');
 
 
     Route::get('/edit-role/{id}', 'Admin\DashboardController@edit');
     Route::put('/edited/{id}', 'Admin\DashboardController@update');
     Route::delete('/delete/{id}', 'Admin\DashboardController@delete');
-
+    Route::delete('/deletetask/{id}', 'Admin\TaskController@deletetask');
+    Route::post('/add_task', 'Admin\TaskController@addtask');
 });
-
 
 
 Auth::routes();
