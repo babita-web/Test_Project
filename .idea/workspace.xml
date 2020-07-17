@@ -4,7 +4,6 @@
     <list default="true" id="57d54d3b-01f9-49f9-b3bf-774800a100c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/TableDataSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/TableDataSeeder.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +175,7 @@
       <workItem from="1594804523957" duration="630000" />
       <workItem from="1594806060957" duration="601000" />
       <workItem from="1594816237471" duration="4950000" />
-      <workItem from="1594888175207" duration="27470000" />
+      <workItem from="1594888175207" duration="28294000" />
     </task>
     <servers />
   </component>

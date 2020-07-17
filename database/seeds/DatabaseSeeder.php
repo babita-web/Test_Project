@@ -12,21 +12,21 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'firstname' => 'Babitsa',
-            'lastname' => 'Verma',
+            'firstname' => 'abc',
+            'lastname' => 'def',
             'usertype'=> 'admin',
             'group'=> 'group1',
-            'email' => 'babiweta@gmail.com',
-            'password' => '1234',
+            'email' => 'abc@gmail.com',
+            'password' => '$2y$10$C3W/PsskBsyCEom/ylnCGeHgYssuSofz1mcS7IyRv7.FXnoaY6y7u',
         ]);
 
         DB::table('users')->insert([
-            'firstname' => 'Babiata',
-            'lastname' => 'Verma',
+            'firstname' => 'dda',
+            'lastname' => 'dsd',
             'usertype'=> 'admin',
             'group'=> 'group1',
-            'email' => 'babitsaa@gmail.com',
-            'password' => '1234',
+            'email' => 'neelshyguy@gmail.com',
+            'password' => '11111111',
         ]);
 
         DB::table('users')->insert([
