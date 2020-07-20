@@ -12,11 +12,11 @@
                 <div class="card-header">
                     <h4 class="card-title"> Users Table with Roles</h4>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
+                    <div class="card-body">
+                        @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
                         @endif
                         <h4 class="card-title"> User Role<a href="{{ url('create-user') }}" class="btn btn-primary float-right">Add User</a></h4>
                 <div class="card-body">
@@ -38,7 +38,7 @@
                             </th>
                             <th>Group</th>
                             <th>
-                               Edit
+                                Edit
                             </th>
                             <th>Delete</th>
                             </thead>
@@ -55,23 +55,23 @@
                                     <td>{{ $user->group }}</td>
 
 
-                                <td>
-                                    <a href="/edit-role/{{$user->id}}" class="btn btn-success" >Edit</a>
-                                </td>
-                                <td>
-                                    <form action="/delete/{{$user->id}}" method="post">
-                                        {{ csrf_field() }}
-                                        {{ method_field('delete') }}
-                                        <input type="hidden" name="id" value="{{ $user->id }}">
-                                        <button type="submit" class="btn btn-danger" >Delete</button>
+                                    <td>
+                                        <a href="/edit-role/{{$user->id}}" class="btn btn-success" >Edit</a>
+                                    </td>
+                                    <td>
+                                        <form action="/delete/{{$user->id}}" method="post">
+                                            {{ csrf_field() }}
+                                            {{ method_field('delete') }}
+                                            <input type="hidden" name="id" value="{{ $user->id }}">
+                                            <button type="submit" class="btn btn-danger" >Delete</button>
 
-                                    </form>
-                                </td>
+                                        </form>
+                                    </td>
 
-                            </tr>
+                                </tr>
                             </tbody>
 
-                                @endforeach
+                            @endforeach
                         </table>
                     </div>
                 </div>

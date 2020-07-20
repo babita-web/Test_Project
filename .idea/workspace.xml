@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57d54d3b-01f9-49f9-b3bf-774800a100c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Consumption.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_19_201335_create_consumption.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_19_202530_create_adoptions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_19_210752_create_actor_has_groups.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_19_211545_create_groups.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_tasks.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_tasks.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_tasks.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_tasks.mwb.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_16_113733_create_tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_16_113733_create_tasks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/tasks.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/tasks.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +192,8 @@
       <workItem from="1594804523957" duration="630000" />
       <workItem from="1594806060957" duration="601000" />
       <workItem from="1594816237471" duration="4950000" />
-      <workItem from="1594888175207" duration="28294000" />
+      <workItem from="1594888175207" duration="28599000" />
+      <workItem from="1595188877546" duration="13956000" />
     </task>
     <servers />
   </component>
@@ -197,5 +215,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/admin/tasks/index.blade.php</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

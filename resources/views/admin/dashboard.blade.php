@@ -2,39 +2,76 @@
 
 @section('title')
 
-    Dashboard| Babita's Test Assignment
-    @endsection
+    Users | Babita's Test Assignment
+@endsection
 @section('content')
 
     <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title"> Simple Table</h4>
-                </div>
+                    <h4 class="card-title"> Users Table with Roles</h4>
+
+                    <div class="card-body">
+                        @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
+                        @endif
+                    </div></div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table">
                             <thead class=" text-primary">
+                            <th>ID</th>
                             <th>
-                                Task
+                                First Name
                             </th>
-                            <th></th>
-
+                            <th>
+                                Last Name
+                            </th>
+                            <th>
+                                Email
+                            </th>
+                            <th>
+                                Role
+                            </th>
+                            <th>Group</th>
+                            <th>
+                                Edit
+                            </th>
+                            <th>Delete</th>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>
-                                    Task1
-                                </td>
-                                <td>
 
-                                </td>
-                                <td>
+                          {{--  @foreach($users as $user)
 
-                                </td>
+                                <tr>
+                                    <td>{{$user->id}}</td>
+                                    <td>{{ $user->firstname }}</td>
+                                    <td>{{ $user->lastname }}</td>
+                                    <td>{{ $user->email }}</td>
+                                    <td>{{ $user->usertype }}</td>
+                                    <td>{{ $user->group }}</td>
 
+
+                                    <td>
+                                        <a href="/edit-role/{{$user->id}}" class="btn btn-success" >Edit</a>
+                                    </td>
+                                    <td>
+                                        <form action="/delete/{{$user->id}}" method="post">
+                                            {{ csrf_field() }}
+                                            {{ method_field('delete') }}
+                                            <input type="hidden" name="id" value="{{ $user->id }}">
+                                            <button type="submit" class="btn btn-danger" >Delete</button>
+
+                                        </form>
+                                    </td>
+
+                                </tr>
                             </tbody>
+
+                            @endforeach--}}
                         </table>
                     </div>
                 </div>
@@ -46,130 +83,11 @@
                     <h4 class="card-title"> Table on Plain Background</h4>
                     <p class="category"> Here is a subtitle for this table</p>
                 </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead class=" text-primary">
-                            <th>
-                                Name
-                            </th>
-                            <th>
-                                Country
-                            </th>
-                            <th>
-                                City
-                            </th>
-                            <th class="text-right">
-                                Salary
-                            </th>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    Dakota Rice
-                                </td>
-                                <td>
-                                    Niger
-                                </td>
-                                <td>
-                                    Oud-Turnhout
-                                </td>
-                                <td class="text-right">
-                                    $36,738
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Minerva Hooper
-                                </td>
-                                <td>
-                                    Curaçao
-                                </td>
-                                <td>
-                                    Sinaai-Waas
-                                </td>
-                                <td class="text-right">
-                                    $23,789
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Sage Rodriguez
-                                </td>
-                                <td>
-                                    Netherlands
-                                </td>
-                                <td>
-                                    Baileux
-                                </td>
-                                <td class="text-right">
-                                    $56,142
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Philip Chaney
-                                </td>
-                                <td>
-                                    Korea, South
-                                </td>
-                                <td>
-                                    Overland Park
-                                </td>
-                                <td class="text-right">
-                                    $38,735
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Doris Greene
-                                </td>
-                                <td>
-                                    Malawi
-                                </td>
-                                <td>
-                                    Feldkirchen in Kärnten
-                                </td>
-                                <td class="text-right">
-                                    $63,542
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Mason Porter
-                                </td>
-                                <td>
-                                    Chile
-                                </td>
-                                <td>
-                                    Gloucester
-                                </td>
-                                <td class="text-right">
-                                    $78,615
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Jon Porter
-                                </td>
-                                <td>
-                                    Portugal
-                                </td>
-                                <td>
-                                    Gloucester
-                                </td>
-                                <td class="text-right">
-                                    $98,615
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
-    @endsection
+@endsection
 
 @section('script')
 

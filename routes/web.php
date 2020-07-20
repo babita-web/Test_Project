@@ -25,7 +25,7 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     });
 
 
-    Route::get('/users', 'Admin\DashboardController@registered');
+    Route::get('/users', 'Admin\UserController@registered');
     Route::get('/tasks', 'Admin\TaskController@assigned');
 
 
@@ -37,6 +37,8 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 
 
     Route::get('/edit-task/{id}', 'Admin\TaskController@edit');
+    Route::get('/user-role', 'Admin\UserController@index');
+    Route::get('/create-user','Admin\UserController@create');
 });
 
 

@@ -17,7 +17,7 @@
 
     <div class="content">
         <div class="title m-b-md">
-           Babita's Test Assignmen Laravel
+           Babita's Test Assignment Laravel
         </div>
 
         <div class="links">

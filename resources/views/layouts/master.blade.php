@@ -43,10 +43,10 @@
           Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
       -->
         <div class="logo">
-            <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+            <a href="#" class="simple-text logo-mini">
                 BV
             </a>
-            <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+            <a href="#" class="simple-text logo-normal">
                 Test Project
             </a>
         </div>
@@ -54,13 +54,13 @@
             <ul class="nav">
 
                 <li class="{{ 'tasks' == request()->path() ? 'active': '' }}">
-                    <a href="/tasks">
+                    <a href="{{ url('tasks') }}">
                         <i class="now-ui-icons education_atom"></i>
                         <p>Tasks</p>
                     </a>
                 </li>
                 <li class="{{ 'users' == request()->path() ? 'active': '' }}">
-                    <a href="/users">
+                    <a href="{{ url('users') }}">
                         <i class="now-ui-icons users_single-02"></i>
                         <p>Users</p>
                     </a>
