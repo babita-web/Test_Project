@@ -53,6 +53,14 @@
         <div class="sidebar-wrapper" id="sidebar-wrapper">
             <ul class="nav">
 
+                <li class="{{ 'admin' == request()->path() ? 'active': '' }}">
+                    <a href="{{ '/admin' }}">
+                        <i class="now-ui-icons education_glasses"></i>
+                        <p>Admin Dashboard</p>
+                    </a>
+                </li>
+
+
                 <li class="{{ 'tasks' == request()->path() ? 'active': '' }}">
                     <a href="{{ url('tasks') }}">
                         <i class="now-ui-icons education_atom"></i>
@@ -82,7 +90,7 @@
                             <span class="navbar-toggler-bar bar3"></span>
                         </button>
                     </div>
-                    <a class="navbar-brand" href="#pablo">Table List</a>
+
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -102,17 +110,12 @@
                     </form>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#pablo">
-                                <i class="now-ui-icons media-2_sound-wave"></i>
-                                <p>
-                                    <span class="d-lg-none d-md-block">Stats</span>
-                                </p>
-                            </a>
+
                         </li>
 
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->firstname }} <span class="caret"></span>
+                                {{ Auth::user()->firstname }} <span class="caret"></span> <i class="now-ui-icons users_single-02"></i>
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -142,12 +145,7 @@
                             </div>
                         </li>--}}
                         <li class="nav-item">
-                            <a class="nav-link" href="#pablo">
-                                <i class="now-ui-icons users_single-02"></i>
-                                <p>
-                                    <span class="d-lg-none d-md-block">Account</span>
-                                </p>
-                            </a>
+
                         </li>
                     </ul>
                 </div>
@@ -165,28 +163,12 @@
         <footer class="footer">
             <div class=" container-fluid ">
                 <nav>
-                    <ul>
-                        <li>
-                            <a href="https://www.creative-tim.com">
-                                Creative Tim
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://presentation.creative-tim.com">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://blog.creative-tim.com">
-                                Blog
-                            </a>
-                        </li>
-                    </ul>
+
                 </nav>
                 <div class="copyright" id="copyright">
                     &copy; <script>
                         document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-                    </script>, Designed by <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                    </script>, Designed by <a href="https://www.babita.be" target="_blank">Babita Verma</a>.
                 </div>
             </div>
         </footer>
